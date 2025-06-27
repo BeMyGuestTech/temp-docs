@@ -1,0 +1,19 @@
+{
+    "overall_summary": "This is a collection of text from several research articles focusing on lung cancer.  The articles cover various aspects of lung cancer research, including biomarker clinical trials, patient-centered outcomes, the impact of prior cancers on treatment, and the role of specific genetic mutations like EGFR and ALK.  The main purpose is to provide an overview of current research and discuss challenges and future directions in lung cancer treatment and clinical trial design.  The articles highlight the need for more efficient and patient-centered approaches to clinical trials and the importance of considering patient heterogeneity in treatment strategies.",
+    "domain_themes": "Oncology",
+    "keywords": [
+        "Lung Cancer",
+        "Biomarkers",
+        "Clinical Trials",
+        "EGFR",
+        "ALK",
+        "Targeted Therapies",
+        "Patient-Centered Outcomes",
+        "Drug Resistance",
+        "Precision Medicine"
+    ],
+    "contributing_sources_count": 151,
+    "generation_timestamp": "2025-06-25T08:43:11.513500+00:00",
+    "llm_status": "success",
+    "error_message": null
+}

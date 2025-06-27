@@ -1,0 +1,3526 @@
+[
+    {
+        "id": "structured-MSL_Engagement_Activity_with_HCP_and_HCO.xlsx-411d60f7",
+        "document": "This dataset contains records of Medical Science Liaison (MSL) engagement activities with Healthcare Professionals (HCPs) and Healthcare Organizations (HCOs), including call details, participant information, and location data.",
+        "metadata": {
+            "identifier": "MSL Engagement Activity with HCP and HCO.xlsx",
+            "data_type": "structured",
+            "source_type": "dataframe",
+            "collection_time": "2025-06-25T08:26:06.049390+00:00",
+            "row_count": 10764,
+            "column_count": 47,
+            "columns": [
+                {
+                    "column": "CALL_ID",
+                    "num_unique_values": 10756,
+                    "samples": [
+                        "EU925245",
+                        "LD843435",
+                        "RA743309"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Unique identifier for each MSL engagement call.",
+                    "dtype": "string",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "CALL_INTERACTION",
+                    "num_unique_values": 1096,
+                    "samples": [
+                        "2022-03-22T00:00:00",
+                        "2024-05-27T00:00:00",
+                        "2023-11-17T00:00:00"
+                    ],
+                    "semantic_type": "timestamp",
+                    "description": "Date and time of the MSL engagement call.",
+                    "dtype": "datetime",
+                    "min": "2022-01-01T00:00:00",
+                    "max": "2024-12-31T00:00:00",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "CALL_STATUS",
+                    "num_unique_values": 3,
+                    "samples": [
+                        "Planned",
+                        "Submitted",
+                        "Cancelled"
+                    ],
+                    "semantic_type": "status",
+                    "description": "Status of the MSL engagement call (e.g., Planned, Submitted, Cancelled).",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "LOAD_DT",
+                    "num_unique_values": 1120,
+                    "samples": [
+                        "2022-02-12T00:00:00",
+                        "2023-06-08T00:00:00",
+                        "2025-01-07T00:00:00"
+                    ],
+                    "semantic_type": "timestamp",
+                    "description": "Date and time when the call record was loaded into the system.",
+                    "dtype": "datetime",
+                    "min": "2022-02-03T00:00:00",
+                    "max": "2025-02-27T00:00:00",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "MONTH_ENDING_DATE",
+                    "num_unique_values": 36,
+                    "samples": [
+                        "2023-02-28T00:00:00",
+                        "2022-10-31T00:00:00",
+                        "2024-11-30T00:00:00"
+                    ],
+                    "semantic_type": "timestamp",
+                    "description": "Last day of the month the call took place.",
+                    "dtype": "datetime",
+                    "min": "2022-01-31T00:00:00",
+                    "max": "2024-12-31T00:00:00",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "WEEK_ENDING_DATE",
+                    "num_unique_values": 158,
+                    "samples": [
+                        "2023-07-16T00:00:00",
+                        "2022-05-15T00:00:00",
+                        "2023-12-24T00:00:00"
+                    ],
+                    "semantic_type": "timestamp",
+                    "description": "Last day of the week the call took place.",
+                    "dtype": "datetime",
+                    "min": "2022-01-02T00:00:00",
+                    "max": "2025-01-05T00:00:00",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "FACE_TO_FACE_CALLS",
+                    "num_unique_values": 2,
+                    "samples": [
+                        true,
+                        false
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Indicates if the call was a face-to-face meeting.",
+                    "dtype": "boolean",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "VIRTUAL_CALLS",
+                    "num_unique_values": 2,
+                    "samples": [
+                        false,
+                        true
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Indicates if the call was a virtual meeting.",
+                    "dtype": "boolean",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "DIGITAL_PROMOTION_CALLS",
+                    "num_unique_values": 2,
+                    "samples": [
+                        true,
+                        false
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Indicates if the call involved digital promotion.",
+                    "dtype": "boolean",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "OTHER_CALLS",
+                    "num_unique_values": 2,
+                    "samples": [
+                        true,
+                        false
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Indicates if the call was of another type.",
+                    "dtype": "boolean",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "GROUP_CALLS",
+                    "num_unique_values": 2,
+                    "samples": [
+                        true,
+                        false
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Indicates if the call was a group call.",
+                    "dtype": "boolean",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "CALL_ATTENDEES",
+                    "num_unique_values": 10,
+                    "samples": [
+                        8,
+                        3,
+                        2
+                    ],
+                    "semantic_type": "count",
+                    "description": "Number of attendees in the call.",
+                    "dtype": "number",
+                    "std": 3.1094832294898955,
+                    "min": 1.0,
+                    "max": 10.0,
+                    "mean": 3.5160720921590487,
+                    "median": 2.0,
+                    "p25": 1.0,
+                    "p75": 6.0,
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "STAFF_ONLY_CALLS",
+                    "num_unique_values": 2,
+                    "samples": [
+                        false,
+                        true
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Indicates if the call was for staff only.",
+                    "dtype": "boolean",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "PRODUCT_NAME",
+                    "num_unique_values": 3,
+                    "samples": [
+                        "ProductB",
+                        "ProductC",
+                        "ProductA"
+                    ],
+                    "semantic_type": "product",
+                    "description": "Name of the product discussed in the call.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "SOURCE_NAME",
+                    "num_unique_values": 3,
+                    "samples": [
+                        "Salesforce",
+                        "CRM",
+                        "Veeva"
+                    ],
+                    "semantic_type": "source",
+                    "description": "Source of the call data (e.g., Salesforce, CRM, Veeva).",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "CORE",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "Core",
+                        "Others"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Categorization of the call (e.g., Core, Others).",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "COT_CODE_DESCRIPTION",
+                    "num_unique_values": 3,
+                    "samples": [
+                        "LTC",
+                        "Retail",
+                        "HOSP"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Description of the call based on a code (e.g., LTC, Retail, HOSP).",
+                    "dtype": "category",
+                    "missing_values_count": 6764,
+                    "missing_values_proportion": 0.6283909327387588
+                },
+                {
+                    "column": "PDRP_FLAG",
+                    "num_unique_values": 2,
+                    "samples": [
+                        1.0,
+                        0.0
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Flag indicating PDRP (likely a specific program or initiative).",
+                    "dtype": "number",
+                    "std": 0.49909037245096705,
+                    "min": 0.0,
+                    "max": 1.0,
+                    "mean": 0.4692489651094027,
+                    "median": 0.0,
+                    "p25": 0.0,
+                    "p75": 1.0,
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "AMA_CONTACT_FLAG",
+                    "num_unique_values": 2,
+                    "samples": [
+                        0.0,
+                        1.0
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Flag indicating AMA (likely a specific program or initiative) contact.",
+                    "dtype": "number",
+                    "std": 0.49909037245096705,
+                    "min": 0.0,
+                    "max": 1.0,
+                    "mean": 0.5307510348905973,
+                    "median": 1.0,
+                    "p25": 0.0,
+                    "p75": 1.0,
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "CUSTOMER_NAME",
+                    "num_unique_values": 4999,
+                    "samples": [
+                        "Griffy Fideler",
+                        "Tyler Meyer",
+                        "Travis Sellers"
+                    ],
+                    "semantic_type": "person",
+                    "description": "Name of the customer (HCP or HCO representative).",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "CUSTOMER_ID",
+                    "num_unique_values": 4998,
+                    "samples": [
+                        3238182,
+                        2296105,
+                        3275403
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Unique identifier for the customer.",
+                    "dtype": "number",
+                    "std": 2605611.768684586,
+                    "min": 1000702.0,
+                    "max": 9998523.0,
+                    "mean": 5440281.955035303,
+                    "median": 5475480.5,
+                    "p25": 3162780.0,
+                    "p75": 7733677.0,
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "First_Name",
+                    "num_unique_values": 936,
+                    "samples": [
+                        "Terrill",
+                        "Kristien",
+                        "Nolan"
+                    ],
+                    "semantic_type": "name",
+                    "description": "First name of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "Last_Name",
+                    "num_unique_values": 989,
+                    "samples": [
+                        "Luxmoore",
+                        "Weightman",
+                        "Duddell"
+                    ],
+                    "semantic_type": "name",
+                    "description": "Last name of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "GENDER",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "Female",
+                        "Male"
+                    ],
+                    "semantic_type": "gender",
+                    "description": "Gender of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "DEA_NUMBER",
+                    "num_unique_values": 1000,
+                    "samples": [
+                        "FC8078532",
+                        "AB9465483",
+                        "GL2712811"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "DEA (Drug Enforcement Administration) number of the customer (if applicable).",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "NPI_NUMBER",
+                    "num_unique_values": 5000,
+                    "samples": [
+                        3906349114,
+                        7445008745,
+                        7665786933
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "NPI (National Provider Identifier) number of the customer (if applicable).",
+                    "dtype": "number",
+                    "std": 2579202272.3751664,
+                    "min": 1001966065.0,
+                    "max": 9997726977.0,
+                    "mean": 5416806602.345596,
+                    "median": 5274779427.0,
+                    "p25": 3159299913.0,
+                    "p75": 7609102689.0,
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "PROFESSIONAL_DSGN",
+                    "num_unique_values": 13,
+                    "samples": [
+                        "DMD",
+                        "UNK",
+                        "PA"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Professional designation of the customer (e.g., DMD, UNK, PA).",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "SPECIALTY",
+                    "num_unique_values": 19,
+                    "samples": [
+                        "Hematology/Oncology",
+                        "Radiation Oncology",
+                        "Orthopedic Oncology"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Medical specialty of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "SPECIALTY_DESC",
+                    "num_unique_values": 1,
+                    "samples": [
+                        "Oncology"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Description of the medical specialty.",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "CUSTOMER_TYPE",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "HCO",
+                        "HCP"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Type of customer (HCO: Healthcare Organization, HCP: Healthcare Professional).",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "SLN",
+                    "num_unique_values": 1000,
+                    "samples": [
+                        "NE3616774",
+                        "MI5907667",
+                        "AR9817896"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Unique identifier for the customer's location or account.",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "HCP_TARGET_FLG",
+                    "num_unique_values": 2,
+                    "samples": [
+                        1.0,
+                        0.0
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Flag indicating if the HCP is a target customer.",
+                    "dtype": "number",
+                    "std": 0.5000355655165684,
+                    "min": 0.0,
+                    "max": 1.0,
+                    "mean": 0.5011827321111768,
+                    "median": 1.0,
+                    "p25": 0.0,
+                    "p75": 1.0,
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "HCP_TARGET_TIER",
+                    "num_unique_values": 5,
+                    "samples": [
+                        "Tier 4",
+                        "Tier 2",
+                        "Tier 3"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Tier of the HCP target customer.",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "HCO_TARGET_FLG",
+                    "num_unique_values": 2,
+                    "samples": [
+                        0.0,
+                        1.0
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Flag indicating if the HCO is a target customer.",
+                    "dtype": "number",
+                    "std": 0.49996742829642343,
+                    "min": 0.0,
+                    "max": 1.0,
+                    "mean": 0.49025,
+                    "median": 0.0,
+                    "p25": 0.0,
+                    "p75": 1.0,
+                    "missing_values_count": 6764,
+                    "missing_values_proportion": 0.6283909327387588
+                },
+                {
+                    "column": "PARENT_HCO_ID",
+                    "num_unique_values": 2707,
+                    "samples": [
+                        "HCO484285",
+                        "HCO466333",
+                        "HCO288279"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Identifier for the parent HCO (if applicable).",
+                    "dtype": "string",
+                    "missing_values_count": 8051,
+                    "missing_values_proportion": 0.7479561501300632
+                },
+                {
+                    "column": "PARENT_HCO_NAME",
+                    "num_unique_values": 80,
+                    "samples": [
+                        "UnityPoint Health System",
+                        "Mercy Health System",
+                        "Premier Community Health"
+                    ],
+                    "semantic_type": "organization",
+                    "description": "Name of the parent HCO (if applicable).",
+                    "dtype": "category",
+                    "missing_values_count": 8051,
+                    "missing_values_proportion": 0.7479561501300632
+                },
+                {
+                    "column": "PARENT_HCO_TYPE",
+                    "num_unique_values": 13,
+                    "samples": [
+                        "Veterans Affairs Facility",
+                        "Mental Health Center",
+                        "Private Practice"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Type of the parent HCO (if applicable).",
+                    "dtype": "category",
+                    "missing_values_count": 8051,
+                    "missing_values_proportion": 0.7479561501300632
+                },
+                {
+                    "column": "MDM_GOLDEN_ADDRESS",
+                    "num_unique_values": 998,
+                    "samples": [
+                        "5 Brickson Park Plaza",
+                        "2997 Twin Pines Place",
+                        "05 5th Crossing"
+                    ],
+                    "semantic_type": "address",
+                    "description": "Address from MDM (Master Data Management) system.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "MDM_GOLDEN_CITY",
+                    "num_unique_values": 290,
+                    "samples": [
+                        "Los Angeles",
+                        "Englewood",
+                        "Texarkana"
+                    ],
+                    "semantic_type": "city",
+                    "description": "City from MDM (Master Data Management) system.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "MDM_GOLDEN_STATE",
+                    "num_unique_values": 47,
+                    "samples": [
+                        "New Mexico",
+                        "Oklahoma",
+                        "Wisconsin"
+                    ],
+                    "semantic_type": "state",
+                    "description": "State from MDM (Master Data Management) system.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "MDM_GOLDEN_ZIP",
+                    "num_unique_values": 4890,
+                    "samples": [
+                        73772,
+                        35221,
+                        32351
+                    ],
+                    "semantic_type": "zip_code",
+                    "description": "Zip code from MDM (Master Data Management) system.",
+                    "dtype": "number",
+                    "std": 28615.489110168026,
+                    "min": 512.0,
+                    "max": 99887.0,
+                    "mean": 51419.23327759197,
+                    "median": 52393.5,
+                    "p25": 26787.5,
+                    "p75": 76125.25,
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "MDM_ID",
+                    "num_unique_values": 5000,
+                    "samples": [
+                        "MDM7089999",
+                        "MDM7971376",
+                        "MDM5620344"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Identifier from MDM (Master Data Management) system.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "COUNTRY",
+                    "num_unique_values": 1,
+                    "samples": [
+                        "USA"
+                    ],
+                    "semantic_type": "country",
+                    "description": "Country of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "REGION_NAME",
+                    "num_unique_values": 4,
+                    "samples": [
+                        "US-Central",
+                        "US-South",
+                        "US-East"
+                    ],
+                    "semantic_type": "region",
+                    "description": "Region of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "TERRITORY",
+                    "num_unique_values": 47,
+                    "samples": [
+                        "Tennessee",
+                        "Idaho",
+                        "New Jersey"
+                    ],
+                    "semantic_type": "territory",
+                    "description": "Territory of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "AREA_NM",
+                    "num_unique_values": 9,
+                    "samples": [
+                        "South Atlantic",
+                        "East North Central",
+                        "East South Central"
+                    ],
+                    "semantic_type": "region",
+                    "description": "Area name of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "PHONE",
+                    "num_unique_values": 1000,
+                    "samples": [
+                        "808-483-3921",
+                        "175-567-5830",
+                        "136-427-1129"
+                    ],
+                    "semantic_type": "phone_number",
+                    "description": "Phone number of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                }
+            ],
+            "enrichment_status": "success",
+            "target_database": "RAG_DB_UPLOADS",
+            "target_table_name": "msl_engagement_activity_with_hcp_and_hco"
+        }
+    },
+    {
+        "id": "structured-Prescription_Transactions_SALES_.xlsx-d5bed7c3",
+        "document": "This dataset contains prescription transaction data, including customer information, prescription details, and pricing information.",
+        "metadata": {
+            "identifier": "Prescription Transactions (SALES).xlsx",
+            "data_type": "structured",
+            "source_type": "dataframe",
+            "collection_time": "2025-06-25T08:26:46.104357+00:00",
+            "row_count": 10457,
+            "column_count": 64,
+            "columns": [
+                {
+                    "column": "MDM_ID",
+                    "num_unique_values": 2000,
+                    "samples": [
+                        "MDM9265772",
+                        "MDM9588471",
+                        "MDM6216274"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Unique identifier for the medical provider.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "CUSTOMER_ID",
+                    "num_unique_values": 1420,
+                    "samples": [
+                        120077853,
+                        777843164,
+                        193660686
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Unique identifier for the customer.",
+                    "dtype": "number",
+                    "std": 259192132.89203256,
+                    "min": 100116014.0,
+                    "max": 999909276.0,
+                    "mean": 567693942.0823371,
+                    "median": 583140885.0,
+                    "p25": 348654652.0,
+                    "p75": 792366239.0,
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "CUSTOMER_NAME",
+                    "num_unique_values": 1420,
+                    "samples": [
+                        "Susan Weild",
+                        "Lenna Marsters",
+                        "Gardiner Yancey"
+                    ],
+                    "semantic_type": "name",
+                    "description": "Name of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "CUSTOMER_TYPE",
+                    "num_unique_values": 3,
+                    "samples": [
+                        "HCP",
+                        "HCO",
+                        "SD"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Type of customer (e.g., Healthcare Provider, Healthcare Organization, Sales Distributor).",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "MDM_GOLDEN_ADDRESS",
+                    "num_unique_values": 998,
+                    "samples": [
+                        "506 Colorado Trail",
+                        "0 Dapin Trail",
+                        "1800 Sutherland Road"
+                    ],
+                    "semantic_type": "address",
+                    "description": "Address of the customer from MDM Golden Record.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "MDM_GOLDEN_CITY",
+                    "num_unique_values": 290,
+                    "samples": [
+                        "Corpus Christi",
+                        "Inglewood",
+                        "Oklahoma City"
+                    ],
+                    "semantic_type": "city",
+                    "description": "City of the customer from MDM Golden Record.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "MDM_GOLDEN_STATE",
+                    "num_unique_values": 47,
+                    "samples": [
+                        "Georgia",
+                        "West Virginia",
+                        "Montana"
+                    ],
+                    "semantic_type": "state",
+                    "description": "State of the customer from MDM Golden Record.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "MDM_GOLDEN_ZIP",
+                    "num_unique_values": 1974,
+                    "samples": [
+                        63416,
+                        86936,
+                        45229
+                    ],
+                    "semantic_type": "zip_code",
+                    "description": "Zip code of the customer from MDM Golden Record.",
+                    "dtype": "number",
+                    "std": 29022.984920024104,
+                    "min": 527.0,
+                    "max": 99933.0,
+                    "mean": 50493.41924070001,
+                    "median": 50945.0,
+                    "p25": 24654.0,
+                    "p75": 74960.0,
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "PHONE",
+                    "num_unique_values": 2000,
+                    "samples": [
+                        "001-938-6182",
+                        "140-980-9432",
+                        "171-662-8873"
+                    ],
+                    "semantic_type": "phone_number",
+                    "description": "Phone number of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "TERRITORY",
+                    "num_unique_values": 645,
+                    "samples": [
+                        "TERR-595",
+                        "North Dakota",
+                        "TERR-555"
+                    ],
+                    "semantic_type": "territory",
+                    "description": "Sales territory of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "REGION_NAME",
+                    "num_unique_values": 4,
+                    "samples": [
+                        "US-Central",
+                        "US-East",
+                        "US-West"
+                    ],
+                    "semantic_type": "region",
+                    "description": "Region of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "AREA_NM",
+                    "num_unique_values": 9,
+                    "samples": [
+                        "New England",
+                        "West North Central",
+                        "South Atlantic"
+                    ],
+                    "semantic_type": "region",
+                    "description": "Area of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "COUNTRY",
+                    "num_unique_values": 1,
+                    "samples": [
+                        "USA"
+                    ],
+                    "semantic_type": "country",
+                    "description": "Country of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "MONTH_ENDING_DATE",
+                    "num_unique_values": 36,
+                    "samples": [
+                        "2023-07-31T00:00:00",
+                        "2023-06-30T00:00:00",
+                        "2024-10-31T00:00:00"
+                    ],
+                    "semantic_type": "timestamp",
+                    "description": "Month-ending date of the transaction.",
+                    "dtype": "datetime",
+                    "min": "2022-01-31T00:00:00",
+                    "max": "2024-12-31T00:00:00",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "WEEK_ENDING_DATE",
+                    "num_unique_values": 158,
+                    "samples": [
+                        "2024-04-14T00:00:00",
+                        "2024-12-01T00:00:00",
+                        "2022-12-04T00:00:00"
+                    ],
+                    "semantic_type": "timestamp",
+                    "description": "Week-ending date of the transaction.",
+                    "dtype": "datetime",
+                    "min": "2022-01-02T00:00:00",
+                    "max": "2025-01-05T00:00:00",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "LOAD_DT",
+                    "num_unique_values": 924,
+                    "samples": [
+                        "2023-08-25T00:00:00",
+                        "2023-08-11T00:00:00",
+                        "2022-04-10T00:00:00"
+                    ],
+                    "semantic_type": "timestamp",
+                    "description": "Date the data was loaded.",
+                    "dtype": "datetime",
+                    "min": "2022-02-01T00:00:00",
+                    "max": "2025-02-25T00:00:00",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "FIRST_NAME",
+                    "num_unique_values": 936,
+                    "samples": [
+                        "Bertina",
+                        "Roley",
+                        "Penny"
+                    ],
+                    "semantic_type": "name",
+                    "description": "First name of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "LAST_NAME",
+                    "num_unique_values": 989,
+                    "samples": [
+                        "Smerdon",
+                        "Truwert",
+                        "Ayer"
+                    ],
+                    "semantic_type": "name",
+                    "description": "Last name of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "GENDER",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "Male",
+                        "Female"
+                    ],
+                    "semantic_type": "gender",
+                    "description": "Gender of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "PROFESSIONAL_DSGN",
+                    "num_unique_values": 13,
+                    "samples": [
+                        "OD",
+                        "EST",
+                        "DO"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Professional designation of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "PRIMARY_SPECIALTY",
+                    "num_unique_values": 1,
+                    "samples": [
+                        "Oncology"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Primary specialty of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "SECONDARY_SPECIALTY",
+                    "num_unique_values": 19,
+                    "samples": [
+                        "Gastrointestinal Oncology",
+                        "Geriatric Oncology",
+                        "Oncology Pharmacy"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Secondary specialty of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "DEA_NUMBER",
+                    "num_unique_values": 1000,
+                    "samples": [
+                        "MR8035520",
+                        "FM6752592",
+                        "AB3293026"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "DEA number of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "NPI_NUMBER",
+                    "num_unique_values": 1000,
+                    "samples": [
+                        9101791299.0,
+                        5320840646.0,
+                        8015372002.0
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "NPI number of the customer.",
+                    "dtype": "number",
+                    "std": 2547967566.170776,
+                    "min": 1005179461.0,
+                    "max": 9990703540.0,
+                    "mean": 5554261224.883734,
+                    "median": 5634904830.0,
+                    "p25": 3388534165.0,
+                    "p75": 7704032816.0,
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "SLN",
+                    "num_unique_values": 1000,
+                    "samples": [
+                        "DE7611421",
+                        "OR3599685",
+                        "CT2625733"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "State License Number.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "AMA_CONTACT_FLAG",
+                    "num_unique_values": 2,
+                    "samples": [
+                        1.0,
+                        0.0
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Flag indicating if the customer is an AMA contact.",
+                    "dtype": "number",
+                    "std": 0.4994855930725899,
+                    "min": 0.0,
+                    "max": 1.0,
+                    "mean": 0.5234008314335523,
+                    "median": 1.0,
+                    "p25": 0.0,
+                    "p75": 1.0,
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "PDRP_FLAG",
+                    "num_unique_values": 2,
+                    "samples": [
+                        1.0,
+                        0.0
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Flag indicating if the customer is part of the PDRP program.",
+                    "dtype": "number",
+                    "std": 0.4994855930725899,
+                    "min": 0.0,
+                    "max": 1.0,
+                    "mean": 0.47659916856644763,
+                    "median": 0.0,
+                    "p25": 0.0,
+                    "p75": 1.0,
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "PRODUCT_NAME",
+                    "num_unique_values": 3,
+                    "samples": [
+                        "ProductA",
+                        "ProductB",
+                        "ProductC"
+                    ],
+                    "semantic_type": "product_name",
+                    "description": "Name of the product.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "DOSE_PRESCRIBED",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "50 mg",
+                        "10 mg"
+                    ],
+                    "semantic_type": "measurement",
+                    "description": "Dose of the product prescribed.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "RX_TYPE",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "SP",
+                        "Retail"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Type of prescription (e.g., Specialty Pharmacy, Retail).",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "DRUG_NDC",
+                    "num_unique_values": 6,
+                    "samples": [
+                        "34567-8901-02",
+                        "12345-6789-01",
+                        "23456-7890-01"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "National Drug Code of the product.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "COST_PRICE",
+                    "num_unique_values": 1006,
+                    "samples": [
+                        42584.5825677611,
+                        29524.8397974848,
+                        36627.5597531577
+                    ],
+                    "semantic_type": "price",
+                    "description": "Cost price of the product.",
+                    "dtype": "number",
+                    "std": 7723.8063848461425,
+                    "min": 21000.0,
+                    "max": 45884.6215902375,
+                    "mean": 30802.8006782967,
+                    "median": 32690.7088863662,
+                    "p25": 22391.8674992855,
+                    "p75": 38000.0,
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "WAC_PRICE",
+                    "num_unique_values": 1000,
+                    "samples": [
+                        38274.1112075099,
+                        38422.7951295591,
+                        27886.5106844639
+                    ],
+                    "semantic_type": "price",
+                    "description": "Wholesale Acquisition Cost (WAC) price of the product.",
+                    "dtype": "number",
+                    "std": 5807.604519301024,
+                    "min": 20002.8543168772,
+                    "max": 39968.1784006119,
+                    "mean": 29844.62703654249,
+                    "median": 29799.27441011175,
+                    "p25": 24906.88796789135,
+                    "p75": 34641.58822512618,
+                    "missing_values_count": 7457,
+                    "missing_values_proportion": 0.7131108348474706
+                },
+                {
+                    "column": "NET_PRICE",
+                    "num_unique_values": 1000,
+                    "samples": [
+                        32581.9750718704,
+                        22794.681077022,
+                        23176.0168819168
+                    ],
+                    "semantic_type": "price",
+                    "description": "Net price of the product.",
+                    "dtype": "number",
+                    "std": 5791.236235303669,
+                    "min": 18987.8090019003,
+                    "max": 41296.1594312137,
+                    "mean": 29540.966007884574,
+                    "median": 29437.688082178698,
+                    "p25": 24584.22092849295,
+                    "p75": 34284.0007993467,
+                    "missing_values_count": 7457,
+                    "missing_values_proportion": 0.7131108348474706
+                },
+                {
+                    "column": "PACK",
+                    "num_unique_values": 24,
+                    "samples": [
+                        23.0,
+                        3.0,
+                        7.0
+                    ],
+                    "semantic_type": "count",
+                    "description": "Number of packs shipped.",
+                    "dtype": "number",
+                    "std": 6.906558389550459,
+                    "min": 2.0,
+                    "max": 25.0,
+                    "mean": 13.65979381443299,
+                    "median": 14.0,
+                    "p25": 7.0,
+                    "p75": 20.0,
+                    "missing_values_count": 9002,
+                    "missing_values_proportion": 0.8608587549010233
+                },
+                {
+                    "column": "PILLS_SHIPPED",
+                    "num_unique_values": 24,
+                    "samples": [
+                        90.0,
+                        130.0,
+                        200.0
+                    ],
+                    "semantic_type": "count",
+                    "description": "Number of pills shipped.",
+                    "dtype": "number",
+                    "std": 69.06558389550459,
+                    "min": 20.0,
+                    "max": 250.0,
+                    "mean": 136.5979381443299,
+                    "median": 140.0,
+                    "p25": 70.0,
+                    "p75": 200.0,
+                    "missing_values_count": 9002,
+                    "missing_values_proportion": 0.8608587549010233
+                },
+                {
+                    "column": "QUANTITY_RETURNS",
+                    "num_unique_values": 24,
+                    "samples": [
+                        7.0,
+                        9.0,
+                        2.0
+                    ],
+                    "semantic_type": "count",
+                    "description": "Quantity of product returned.",
+                    "dtype": "number",
+                    "std": 3.4532791947752295,
+                    "min": 1.0,
+                    "max": 12.5,
+                    "mean": 6.829896907216495,
+                    "median": 7.0,
+                    "p25": 3.5,
+                    "p75": 10.0,
+                    "missing_values_count": 9002,
+                    "missing_values_proportion": 0.8608587549010233
+                },
+                {
+                    "column": "INVOICE_NUMBER",
+                    "num_unique_values": 10457,
+                    "samples": [
+                        3363172571,
+                        3372814993,
+                        6419120480
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Invoice number.",
+                    "dtype": "number",
+                    "std": 2875183984.9757533,
+                    "min": 418558.0,
+                    "max": 9999672667.0,
+                    "mean": 4977660211.331262,
+                    "median": 5001766167.0,
+                    "p25": 2490407811.0,
+                    "p75": 7400283270.0,
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "INCLUSION_FLAG",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "N",
+                        "Y"
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Flag indicating inclusion in a specific program.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "CHANNEL_TYPE",
+                    "num_unique_values": 6,
+                    "samples": [
+                        "LTC",
+                        "Mail Order",
+                        "DDD"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Type of sales channel.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "DATA_CHANNEL_DESCRIPTION",
+                    "num_unique_values": 4,
+                    "samples": [
+                        "SP Sales",
+                        "DDD Sales",
+                        "SD Sales"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Description of the data channel.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "SOURCE_NAME",
+                    "num_unique_values": 4,
+                    "samples": [
+                        "SD",
+                        "Xponent",
+                        "SP"
+                    ],
+                    "semantic_type": "source",
+                    "description": "Source of the data.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "COT_CODE_DESCRIPTION",
+                    "num_unique_values": 4,
+                    "samples": [
+                        "HOSP",
+                        "Retail",
+                        "SD"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Description of the COT code.",
+                    "dtype": "category",
+                    "missing_values_count": 7457,
+                    "missing_values_proportion": 0.7131108348474706
+                },
+                {
+                    "column": "VOUCHER_PROVIDED",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "N",
+                        "Y"
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Flag indicating if a voucher was provided.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "TRANSACTION_ID",
+                    "num_unique_values": 7457,
+                    "samples": [
+                        "Z7ZUUUKE8X66",
+                        "TBOBV867L1EW",
+                        "MBBODLFXFZJF"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Unique identifier for the transaction.",
+                    "dtype": "string",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "TRANSACTION_TYPE",
+                    "num_unique_values": 1,
+                    "samples": [
+                        "Commercial"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Type of transaction.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "FILL_TYPE",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "New",
+                        "Refill"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Type of fill (New or Refill).",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "ORDER_TYPE",
+                    "num_unique_values": 4,
+                    "samples": [
+                        "Commercial",
+                        "Referrals",
+                        "Bridge"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Type of order.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "UOM",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "Packs",
+                        "Vials"
+                    ],
+                    "semantic_type": "unit",
+                    "description": "Unit of measurement.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "PATIENT_ID",
+                    "num_unique_values": 3704,
+                    "samples": [
+                        "RV3QYSOJCV",
+                        "75GQOITQKN",
+                        "F80ZBIWK1K"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Unique identifier for the patient.",
+                    "dtype": "string",
+                    "missing_values_count": 6753,
+                    "missing_values_proportion": 0.6457875107583437
+                },
+                {
+                    "column": "COPAY_TYPE",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "Co-Insurance",
+                        "Fixed"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Type of copay.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "PRI_PAYER_NAME",
+                    "num_unique_values": 5,
+                    "samples": [
+                        "BCBS Association",
+                        "Aetna",
+                        "UnitedHealthcare"
+                    ],
+                    "semantic_type": "payer",
+                    "description": "Name of the primary payer.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "PRIMARY_COPAY_AMOUNT",
+                    "num_unique_values": 13,
+                    "samples": [
+                        880.0,
+                        3700.0,
+                        0.0
+                    ],
+                    "semantic_type": "price",
+                    "description": "Amount of the primary copay.",
+                    "dtype": "number",
+                    "std": 671.8058488328079,
+                    "min": 0.0,
+                    "max": 3900.0,
+                    "mean": 507.1100978945957,
+                    "median": 0.0,
+                    "p25": 0.0,
+                    "p75": 920.0,
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "PRIMARY_ICD_CD",
+                    "num_unique_values": 201,
+                    "samples": [
+                        138.0,
+                        197.0,
+                        155.0
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Primary ICD code.",
+                    "dtype": "number",
+                    "std": 58.04276873404983,
+                    "min": 100.0,
+                    "max": 300.0,
+                    "mean": 199.50080993520518,
+                    "median": 199.0,
+                    "p25": 150.0,
+                    "p75": 249.0,
+                    "missing_values_count": 6753,
+                    "missing_values_proportion": 0.6457875107583437
+                },
+                {
+                    "column": "SECONDARY_ICD_CD",
+                    "num_unique_values": 201,
+                    "samples": [
+                        267.0,
+                        117.0,
+                        164.0
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Secondary ICD code.",
+                    "dtype": "number",
+                    "std": 57.20133489544671,
+                    "min": 100.0,
+                    "max": 300.0,
+                    "mean": 200.18341570565624,
+                    "median": 202.0,
+                    "p25": 154.0,
+                    "p75": 249.0,
+                    "missing_values_count": 8636,
+                    "missing_values_proportion": 0.8258582767524146
+                },
+                {
+                    "column": "PRIMARY_PAYER_DEDUCTIBLE",
+                    "num_unique_values": 13,
+                    "samples": [
+                        3900.0,
+                        1260.0,
+                        3800.0
+                    ],
+                    "semantic_type": "price",
+                    "description": "Primary payer deductible amount.",
+                    "dtype": "number",
+                    "std": 934.2982399458648,
+                    "min": 0.0,
+                    "max": 3900.0,
+                    "mean": 2491.884135711412,
+                    "median": 2280.0,
+                    "p25": 2100.0,
+                    "p75": 3700.0,
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "PRIMARY_PAYER_PAYMENT_TYPE",
+                    "num_unique_values": 4,
+                    "samples": [
+                        "Medicaid",
+                        "Commercial",
+                        "Cash"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Payment type of the primary payer.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "PRIMARY_PAYER_PBM_NAME",
+                    "num_unique_values": 3,
+                    "samples": [
+                        "Express Scripts",
+                        "CVS Caremark",
+                        "OptumRx"
+                    ],
+                    "semantic_type": "payer",
+                    "description": "Name of the primary payer's PBM.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "SP_NAME",
+                    "num_unique_values": 6,
+                    "samples": [
+                        "Cigma",
+                        "Walgreens",
+                        "Humana"
+                    ],
+                    "semantic_type": "payer",
+                    "description": "Name of the Specialty Pharmacy.",
+                    "dtype": "category",
+                    "missing_values_count": 6753,
+                    "missing_values_proportion": 0.6457875107583437
+                },
+                {
+                    "column": "UNITS_SHIPPED",
+                    "num_unique_values": 9,
+                    "samples": [
+                        7.0,
+                        4.0,
+                        1.0
+                    ],
+                    "semantic_type": "count",
+                    "description": "Number of units shipped.",
+                    "dtype": "number",
+                    "std": 2.5976982944757823,
+                    "min": 1.0,
+                    "max": 9.0,
+                    "mean": 4.992379500857306,
+                    "median": 5.0,
+                    "p25": 3.0,
+                    "p75": 7.0,
+                    "missing_values_count": 5208,
+                    "missing_values_proportion": 0.49803959070479104
+                },
+                {
+                    "column": "DAYS_SUPPLIED",
+                    "num_unique_values": 36,
+                    "samples": [
+                        17.0,
+                        36.0,
+                        47.0
+                    ],
+                    "semantic_type": "duration",
+                    "description": "Number of days the prescription is supplied for.",
+                    "dtype": "number",
+                    "std": 10.264755669653356,
+                    "min": 15.0,
+                    "max": 50.0,
+                    "mean": 32.77967010862277,
+                    "median": 33.0,
+                    "p25": 24.0,
+                    "p75": 42.0,
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "TRX_COUNT",
+                    "num_unique_values": 1,
+                    "samples": [
+                        1.0
+                    ],
+                    "semantic_type": "count",
+                    "description": "Transaction count.",
+                    "dtype": "number",
+                    "std": 0.0,
+                    "min": 1.0,
+                    "max": 1.0,
+                    "mean": 1.0,
+                    "median": 1.0,
+                    "p25": 1.0,
+                    "p75": 1.0,
+                    "missing_values_count": 6704,
+                    "missing_values_proportion": 0.6411016543941858
+                },
+                {
+                    "column": "NRX_COUNT",
+                    "num_unique_values": 2,
+                    "samples": [
+                        1.0,
+                        0.0
+                    ],
+                    "semantic_type": "count",
+                    "description": "Count of new prescriptions.",
+                    "dtype": "number",
+                    "std": 0.4902761929126497,
+                    "min": 0.0,
+                    "max": 1.0,
+                    "mean": 0.40154543032240875,
+                    "median": 0.0,
+                    "p25": 0.0,
+                    "p75": 1.0,
+                    "missing_values_count": 6704,
+                    "missing_values_proportion": 0.6411016543941858
+                },
+                {
+                    "column": "GPO_AFFILIATION",
+                    "num_unique_values": 3,
+                    "samples": [
+                        "HealthTrust",
+                        "McKesson",
+                        "CardinalHealth"
+                    ],
+                    "semantic_type": "organization",
+                    "description": "Group Purchasing Organization (GPO) affiliation.",
+                    "dtype": "category",
+                    "missing_values_count": 9002,
+                    "missing_values_proportion": 0.8608587549010233
+                }
+            ],
+            "enrichment_status": "success",
+            "target_database": "RAG_DB_UPLOADS",
+            "target_table_name": "prescription_transactions_sales_"
+        }
+    },
+    {
+        "id": "structured-MSL_Engagement_Activity_with_HCP_and_HCO.xlsx-c6c2b191",
+        "document": "This dataset contains records of Medical Science Liaison (MSL) engagement activities with Healthcare Professionals (HCPs) and Healthcare Organizations (HCOs), including call details, participant information, and location data.",
+        "metadata": {
+            "identifier": "ac124b97c990f1e3ac27e012797196c42f5a0e64ccef61fee404891257852d5c",
+            "data_type": "structured",
+            "source_type": "dataframe",
+            "collection_time": "2025-06-25T11:09:35.560100+00:00",
+            "row_count": 10764,
+            "column_count": 47,
+            "columns": [
+                {
+                    "column": "CALL_ID",
+                    "num_unique_values": 10756,
+                    "samples": [
+                        "461348",
+                        "609857",
+                        "182213"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Unique identifier for each MSL engagement call.",
+                    "dtype": "string",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "CALL_INTERACTION",
+                    "num_unique_values": 1096,
+                    "samples": [
+                        "2023-01-19T00:00:00",
+                        "2024-10-20T00:00:00",
+                        "2022-05-31T00:00:00"
+                    ],
+                    "semantic_type": "timestamp",
+                    "description": "Date and time of the MSL engagement call.",
+                    "dtype": "datetime",
+                    "min": "2022-01-01T00:00:00",
+                    "max": "2024-12-31T00:00:00",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "CALL_STATUS",
+                    "num_unique_values": 3,
+                    "samples": [
+                        "Planned",
+                        "Cancelled",
+                        "Submitted"
+                    ],
+                    "semantic_type": "status",
+                    "description": "Status of the MSL engagement call (e.g., Planned, Cancelled, Submitted).",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "LOAD_DT",
+                    "num_unique_values": 1120,
+                    "samples": [
+                        "2024-10-22T00:00:00",
+                        "2022-10-19T00:00:00",
+                        "2024-01-15T00:00:00"
+                    ],
+                    "semantic_type": "timestamp",
+                    "description": "Date and time when the call record was loaded into the system.",
+                    "dtype": "datetime",
+                    "min": "2022-02-03T00:00:00",
+                    "max": "2025-02-27T00:00:00",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "MONTH_ENDING_DATE",
+                    "num_unique_values": 36,
+                    "samples": [
+                        "2023-04-30T00:00:00",
+                        "2023-08-31T00:00:00",
+                        "2023-10-31T00:00:00"
+                    ],
+                    "semantic_type": "timestamp",
+                    "description": "Last day of the month the call took place.",
+                    "dtype": "datetime",
+                    "min": "2022-01-31T00:00:00",
+                    "max": "2024-12-31T00:00:00",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "WEEK_ENDING_DATE",
+                    "num_unique_values": 158,
+                    "samples": [
+                        "2022-03-27T00:00:00",
+                        "2022-10-30T00:00:00",
+                        "2024-12-08T00:00:00"
+                    ],
+                    "semantic_type": "timestamp",
+                    "description": "Last day of the week the call took place.",
+                    "dtype": "datetime",
+                    "min": "2022-01-02T00:00:00",
+                    "max": "2025-01-05T00:00:00",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "FACE_TO_FACE_CALLS",
+                    "num_unique_values": 2,
+                    "samples": [
+                        false,
+                        true
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Indicates if the call was a face-to-face meeting.",
+                    "dtype": "boolean",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "VIRTUAL_CALLS",
+                    "num_unique_values": 2,
+                    "samples": [
+                        false,
+                        true
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Indicates if the call was a virtual meeting.",
+                    "dtype": "boolean",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "DIGITAL_PROMOTION_CALLS",
+                    "num_unique_values": 2,
+                    "samples": [
+                        false,
+                        true
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Indicates if the call involved digital promotion.",
+                    "dtype": "boolean",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "OTHER_CALLS",
+                    "num_unique_values": 2,
+                    "samples": [
+                        true,
+                        false
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Indicates if the call was of another type.",
+                    "dtype": "boolean",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "GROUP_CALLS",
+                    "num_unique_values": 2,
+                    "samples": [
+                        false,
+                        true
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Indicates if the call was a group call.",
+                    "dtype": "boolean",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "CALL_ATTENDEES",
+                    "num_unique_values": 10,
+                    "samples": [
+                        1,
+                        10,
+                        8
+                    ],
+                    "semantic_type": "count",
+                    "description": "Number of attendees in the call.",
+                    "dtype": "number",
+                    "std": 3.1094832294898955,
+                    "min": 1.0,
+                    "max": 10.0,
+                    "mean": 3.5160720921590487,
+                    "median": 2.0,
+                    "p25": 1.0,
+                    "p75": 6.0,
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "STAFF_ONLY_CALLS",
+                    "num_unique_values": 2,
+                    "samples": [
+                        true,
+                        false
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Indicates if the call was for staff only.",
+                    "dtype": "boolean",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "PRODUCT_NAME",
+                    "num_unique_values": 3,
+                    "samples": [
+                        "ProductC",
+                        "ProductB",
+                        "ProductA"
+                    ],
+                    "semantic_type": "product",
+                    "description": "Name of the product discussed in the call.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "SOURCE_NAME",
+                    "num_unique_values": 3,
+                    "samples": [
+                        "Veeva",
+                        "Salesforce",
+                        "CRM"
+                    ],
+                    "semantic_type": "source",
+                    "description": "Source of the call data (e.g., Veeva, Salesforce).",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "CORE",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "Others",
+                        "Core"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Category indicating if the call is core or other.",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "COT_CODE_DESCRIPTION",
+                    "num_unique_values": 3,
+                    "samples": [
+                        "HOSP",
+                        "LTC",
+                        "Retail"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Type of healthcare setting (e.g., Hospital, Long-Term Care, Retail).",
+                    "dtype": "category",
+                    "missing_values_count": 6764,
+                    "missing_values_proportion": 0.6283909327387588
+                },
+                {
+                    "column": "PDRP_FLAG",
+                    "num_unique_values": 2,
+                    "samples": [
+                        0.0,
+                        1.0
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Flag indicating PDRP (likely a program or initiative).",
+                    "dtype": "number",
+                    "std": 0.49909037245096705,
+                    "min": 0.0,
+                    "max": 1.0,
+                    "mean": 0.4692489651094027,
+                    "median": 0.0,
+                    "p25": 0.0,
+                    "p75": 1.0,
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "AMA_CONTACT_FLAG",
+                    "num_unique_values": 2,
+                    "samples": [
+                        0.0,
+                        1.0
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Flag indicating AMA (likely a program or initiative) contact.",
+                    "dtype": "number",
+                    "std": 0.49909037245096705,
+                    "min": 0.0,
+                    "max": 1.0,
+                    "mean": 0.5307510348905973,
+                    "median": 1.0,
+                    "p25": 0.0,
+                    "p75": 1.0,
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "CUSTOMER_NAME",
+                    "num_unique_values": 4999,
+                    "samples": [
+                        "Kelsey Stone",
+                        "Mercy Medical Ctr New Hampton",
+                        "Paquito Bothwell"
+                    ],
+                    "semantic_type": "name",
+                    "description": "Name of the customer (HCP or HCO).",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "CUSTOMER_ID",
+                    "num_unique_values": 4998,
+                    "samples": [
+                        6475415,
+                        8987114,
+                        9916584
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Unique identifier for the customer.",
+                    "dtype": "number",
+                    "std": 2605611.768684586,
+                    "min": 1000702.0,
+                    "max": 9998523.0,
+                    "mean": 5440281.955035303,
+                    "median": 5475480.5,
+                    "p25": 3162780.0,
+                    "p75": 7733677.0,
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "First_Name",
+                    "num_unique_values": 936,
+                    "samples": [
+                        "Sully",
+                        "Kelci",
+                        "Pablo"
+                    ],
+                    "semantic_type": "name",
+                    "description": "First name of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "Last_Name",
+                    "num_unique_values": 989,
+                    "samples": [
+                        "Grigsby",
+                        "Hendrick",
+                        "Beddows"
+                    ],
+                    "semantic_type": "name",
+                    "description": "Last name of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "GENDER",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "Male",
+                        "Female"
+                    ],
+                    "semantic_type": "gender",
+                    "description": "Gender of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "DEA_NUMBER",
+                    "num_unique_values": 1000,
+                    "samples": [
+                        "FJ1738282",
+                        "GS0881284",
+                        "AG3614864"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "DEA (Drug Enforcement Administration) number of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "NPI_NUMBER",
+                    "num_unique_values": 5000,
+                    "samples": [
+                        1284125305,
+                        4910702198,
+                        5799176761
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "NPI (National Provider Identifier) number of the customer.",
+                    "dtype": "number",
+                    "std": 2579202272.3751664,
+                    "min": 1001966065.0,
+                    "max": 9997726977.0,
+                    "mean": 5416806602.345596,
+                    "median": 5274779427.0,
+                    "p25": 3159299913.0,
+                    "p75": 7609102689.0,
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "PROFESSIONAL_DSGN",
+                    "num_unique_values": 13,
+                    "samples": [
+                        "MD",
+                        "DO",
+                        "NP"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Professional designation of the customer (e.g., MD, DO, NP).",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "SPECIALTY",
+                    "num_unique_values": 19,
+                    "samples": [
+                        "Medical Oncology",
+                        "Radiation Oncology",
+                        "Urologic Oncology"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Medical specialty of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "SPECIALTY_DESC",
+                    "num_unique_values": 1,
+                    "samples": [
+                        "Oncology"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Description of the medical specialty.",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "CUSTOMER_TYPE",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "HCP",
+                        "HCO"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Type of customer (HCP: Healthcare Professional, HCO: Healthcare Organization).",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "SLN",
+                    "num_unique_values": 1000,
+                    "samples": [
+                        "DE9711728",
+                        "MA3538514",
+                        "MD9071966"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Likely a unique identifier for the customer within a specific system.",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "HCP_TARGET_FLG",
+                    "num_unique_values": 2,
+                    "samples": [
+                        0.0,
+                        1.0
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Flag indicating if the HCP is a target.",
+                    "dtype": "number",
+                    "std": 0.5000355655165684,
+                    "min": 0.0,
+                    "max": 1.0,
+                    "mean": 0.5011827321111768,
+                    "median": 1.0,
+                    "p25": 0.0,
+                    "p75": 1.0,
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "HCP_TARGET_TIER",
+                    "num_unique_values": 5,
+                    "samples": [
+                        "Tier 4",
+                        "Tier 1",
+                        "Tier 5"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Tier of the HCP target.",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "HCO_TARGET_FLG",
+                    "num_unique_values": 2,
+                    "samples": [
+                        0.0,
+                        1.0
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Flag indicating if the HCO is a target.",
+                    "dtype": "number",
+                    "std": 0.49996742829642343,
+                    "min": 0.0,
+                    "max": 1.0,
+                    "mean": 0.49025,
+                    "median": 0.0,
+                    "p25": 0.0,
+                    "p75": 1.0,
+                    "missing_values_count": 6764,
+                    "missing_values_proportion": 0.6283909327387588
+                },
+                {
+                    "column": "PARENT_HCO_ID",
+                    "num_unique_values": 2707,
+                    "samples": [
+                        "HCO314646",
+                        "HCO354462",
+                        "HCO777108"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Identifier for the parent HCO.",
+                    "dtype": "string",
+                    "missing_values_count": 8051,
+                    "missing_values_proportion": 0.7479561501300632
+                },
+                {
+                    "column": "PARENT_HCO_NAME",
+                    "num_unique_values": 80,
+                    "samples": [
+                        "Summit Community Health",
+                        "Mercy Community Health",
+                        "Summit Family Practice"
+                    ],
+                    "semantic_type": "name",
+                    "description": "Name of the parent HCO.",
+                    "dtype": "category",
+                    "missing_values_count": 8051,
+                    "missing_values_proportion": 0.7479561501300632
+                },
+                {
+                    "column": "PARENT_HCO_TYPE",
+                    "num_unique_values": 13,
+                    "samples": [
+                        "Federally Qualified Health Center (FQHC)",
+                        "Skilled Nursing Facility",
+                        "Mental Health Center"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Type of the parent HCO.",
+                    "dtype": "category",
+                    "missing_values_count": 8051,
+                    "missing_values_proportion": 0.7479561501300632
+                },
+                {
+                    "column": "MDM_GOLDEN_ADDRESS",
+                    "num_unique_values": 998,
+                    "samples": [
+                        "99 Carpenter Pass",
+                        "70 Ruskin Street",
+                        "69364 Donald Plaza"
+                    ],
+                    "semantic_type": "address",
+                    "description": "Address from MDM (Master Data Management) system.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "MDM_GOLDEN_CITY",
+                    "num_unique_values": 290,
+                    "samples": [
+                        "Toledo",
+                        "Brea",
+                        "Birmingham"
+                    ],
+                    "semantic_type": "city",
+                    "description": "City from MDM system.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "MDM_GOLDEN_STATE",
+                    "num_unique_values": 47,
+                    "samples": [
+                        "South Carolina",
+                        "Nevada",
+                        "Delaware"
+                    ],
+                    "semantic_type": "state",
+                    "description": "State from MDM system.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "MDM_GOLDEN_ZIP",
+                    "num_unique_values": 4890,
+                    "samples": [
+                        21304,
+                        20559,
+                        76141
+                    ],
+                    "semantic_type": "zip_code",
+                    "description": "Zip code from MDM system.",
+                    "dtype": "number",
+                    "std": 28615.489110168026,
+                    "min": 512.0,
+                    "max": 99887.0,
+                    "mean": 51419.23327759197,
+                    "median": 52393.5,
+                    "p25": 26787.5,
+                    "p75": 76125.25,
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "MDM_ID",
+                    "num_unique_values": 5000,
+                    "samples": [
+                        "MDM1356780",
+                        "MDM5121611",
+                        "MDM1488814"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Identifier from MDM system.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "COUNTRY",
+                    "num_unique_values": 1,
+                    "samples": [
+                        "USA"
+                    ],
+                    "semantic_type": "country",
+                    "description": "Country of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "REGION_NAME",
+                    "num_unique_values": 4,
+                    "samples": [
+                        "US-Central",
+                        "US-West",
+                        "US-South"
+                    ],
+                    "semantic_type": "region",
+                    "description": "Region of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "TERRITORY",
+                    "num_unique_values": 47,
+                    "samples": [
+                        "Nevada",
+                        "Oregon",
+                        "Vermont"
+                    ],
+                    "semantic_type": "territory",
+                    "description": "Territory of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                },
+                {
+                    "column": "AREA_NM",
+                    "num_unique_values": 9,
+                    "samples": [
+                        "West North Central",
+                        "West South Central",
+                        "East South Central"
+                    ],
+                    "semantic_type": "region",
+                    "description": "Area name of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "PHONE",
+                    "num_unique_values": 1000,
+                    "samples": [
+                        "509-378-3688",
+                        "807-801-3140",
+                        "412-898-3116"
+                    ],
+                    "semantic_type": "phone_number",
+                    "description": "Phone number of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 4000,
+                    "missing_values_proportion": 0.37160906726124115
+                }
+            ],
+            "enrichment_status": "success",
+            "target_database": "RAG_DB_UPLOADS",
+            "target_table_name": "msl_engagement_activity_with_hcp_and_hco"
+        }
+    },
+    {
+        "id": "structured-Prescription_Transactions_SALES_.xlsx-d1180fbc",
+        "document": "This dataset contains prescription transaction data, including customer information, prescription details, and pricing information.",
+        "metadata": {
+            "identifier": "12818c693500b925d7e4d989b4ea513b7d437828c9a6c80af38fd24d7c35a27e",
+            "data_type": "structured",
+            "source_type": "dataframe",
+            "collection_time": "2025-06-25T11:10:15.462232+00:00",
+            "row_count": 10457,
+            "column_count": 64,
+            "columns": [
+                {
+                    "column": "MDM_ID",
+                    "num_unique_values": 2000,
+                    "samples": [
+                        "MDM7260459",
+                        "MDM7212205",
+                        "MDM2847893"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Unique identifier for the medical provider.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "CUSTOMER_ID",
+                    "num_unique_values": 1420,
+                    "samples": [
+                        964607270,
+                        712831939,
+                        646998476
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Unique identifier for the customer.",
+                    "dtype": "number",
+                    "std": 259192132.89203256,
+                    "min": 100116014.0,
+                    "max": 999909276.0,
+                    "mean": 567693942.0823371,
+                    "median": 583140885.0,
+                    "p25": 348654652.0,
+                    "p75": 792366239.0,
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "CUSTOMER_NAME",
+                    "num_unique_values": 1420,
+                    "samples": [
+                        "Megan Climo",
+                        "Chg Cornerstone Hospital Of Austin/Round",
+                        "Emmott Broschke"
+                    ],
+                    "semantic_type": "name",
+                    "description": "Name of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "CUSTOMER_TYPE",
+                    "num_unique_values": 3,
+                    "samples": [
+                        "HCO",
+                        "SD",
+                        "HCP"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Type of customer (e.g., Healthcare Organization, Specialty Distributor, Healthcare Provider).",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "MDM_GOLDEN_ADDRESS",
+                    "num_unique_values": 998,
+                    "samples": [
+                        "94653 Mosinee Court",
+                        "1 Iowa Park",
+                        "1294 Sundown Avenue"
+                    ],
+                    "semantic_type": "address",
+                    "description": "Address of the customer from MDM Golden database.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "MDM_GOLDEN_CITY",
+                    "num_unique_values": 290,
+                    "samples": [
+                        "Charlotte",
+                        "Brockton",
+                        "Baton Rouge"
+                    ],
+                    "semantic_type": "city",
+                    "description": "City of the customer from MDM Golden database.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "MDM_GOLDEN_STATE",
+                    "num_unique_values": 47,
+                    "samples": [
+                        "New York",
+                        "Alaska",
+                        "New Jersey"
+                    ],
+                    "semantic_type": "state",
+                    "description": "State of the customer from MDM Golden database.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "MDM_GOLDEN_ZIP",
+                    "num_unique_values": 1974,
+                    "samples": [
+                        9368,
+                        92641,
+                        56091
+                    ],
+                    "semantic_type": "zip_code",
+                    "description": "Zip code of the customer from MDM Golden database.",
+                    "dtype": "number",
+                    "std": 29022.984920024104,
+                    "min": 527.0,
+                    "max": 99933.0,
+                    "mean": 50493.41924070001,
+                    "median": 50945.0,
+                    "p25": 24654.0,
+                    "p75": 74960.0,
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "PHONE",
+                    "num_unique_values": 2000,
+                    "samples": [
+                        "415-339-4561",
+                        "623-216-6245",
+                        "505-281-6422"
+                    ],
+                    "semantic_type": "phone_number",
+                    "description": "Phone number of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "TERRITORY",
+                    "num_unique_values": 645,
+                    "samples": [
+                        "TERR-505",
+                        "TERR-212",
+                        "TERR-121"
+                    ],
+                    "semantic_type": "territory",
+                    "description": "Sales territory of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "REGION_NAME",
+                    "num_unique_values": 4,
+                    "samples": [
+                        "US-West",
+                        "US-Central",
+                        "US-South"
+                    ],
+                    "semantic_type": "region",
+                    "description": "Region of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "AREA_NM",
+                    "num_unique_values": 9,
+                    "samples": [
+                        "Mid-Atlantic",
+                        "West South Central",
+                        "Pacific"
+                    ],
+                    "semantic_type": "region",
+                    "description": "Area of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "COUNTRY",
+                    "num_unique_values": 1,
+                    "samples": [
+                        "USA"
+                    ],
+                    "semantic_type": "country",
+                    "description": "Country of the customer.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "MONTH_ENDING_DATE",
+                    "num_unique_values": 36,
+                    "samples": [
+                        "2022-12-31T00:00:00",
+                        "2024-03-31T00:00:00",
+                        "2024-07-31T00:00:00"
+                    ],
+                    "semantic_type": "timestamp",
+                    "description": "Month-ending date of the transaction.",
+                    "dtype": "datetime",
+                    "min": "2022-01-31T00:00:00",
+                    "max": "2024-12-31T00:00:00",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "WEEK_ENDING_DATE",
+                    "num_unique_values": 158,
+                    "samples": [
+                        "2022-09-18T00:00:00",
+                        "2024-02-04T00:00:00",
+                        "2023-03-05T00:00:00"
+                    ],
+                    "semantic_type": "timestamp",
+                    "description": "Week-ending date of the transaction.",
+                    "dtype": "datetime",
+                    "min": "2022-01-02T00:00:00",
+                    "max": "2025-01-05T00:00:00",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "LOAD_DT",
+                    "num_unique_values": 924,
+                    "samples": [
+                        "2022-03-01T00:00:00",
+                        "2024-11-02T00:00:00",
+                        "2024-11-04T00:00:00"
+                    ],
+                    "semantic_type": "timestamp",
+                    "description": "Date the data was loaded.",
+                    "dtype": "datetime",
+                    "min": "2022-02-01T00:00:00",
+                    "max": "2025-02-25T00:00:00",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "FIRST_NAME",
+                    "num_unique_values": 936,
+                    "samples": [
+                        "Pooh",
+                        "Ashlin",
+                        "Miner"
+                    ],
+                    "semantic_type": "name",
+                    "description": "First name of the prescriber.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "LAST_NAME",
+                    "num_unique_values": 989,
+                    "samples": [
+                        "Cottem",
+                        "Marfell",
+                        "Grund"
+                    ],
+                    "semantic_type": "name",
+                    "description": "Last name of the prescriber.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "GENDER",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "Male",
+                        "Female"
+                    ],
+                    "semantic_type": "gender",
+                    "description": "Gender of the prescriber.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "PROFESSIONAL_DSGN",
+                    "num_unique_values": 13,
+                    "samples": [
+                        "NP",
+                        "PA",
+                        "ESTI"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Professional designation of the prescriber (e.g., Nurse Practitioner, Physician Assistant).",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "PRIMARY_SPECIALTY",
+                    "num_unique_values": 1,
+                    "samples": [
+                        "Oncology"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Primary specialty of the prescriber.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "SECONDARY_SPECIALTY",
+                    "num_unique_values": 19,
+                    "samples": [
+                        "Gynecologic Oncology",
+                        "Oncologic Pathology",
+                        "Orthopedic Oncology"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Secondary specialty of the prescriber.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "DEA_NUMBER",
+                    "num_unique_values": 1000,
+                    "samples": [
+                        "FW7042497",
+                        "FM6176261",
+                        "XB3184594"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "DEA number of the prescriber.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "NPI_NUMBER",
+                    "num_unique_values": 1000,
+                    "samples": [
+                        5577191307.0,
+                        4812460848.0,
+                        6368185282.0
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "National Provider Identifier (NPI) of the prescriber.",
+                    "dtype": "number",
+                    "std": 2547967566.170776,
+                    "min": 1005179461.0,
+                    "max": 9990703540.0,
+                    "mean": 5554261224.883734,
+                    "median": 5634904830.0,
+                    "p25": 3388534165.0,
+                    "p75": 7704032816.0,
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "SLN",
+                    "num_unique_values": 1000,
+                    "samples": [
+                        "UT7261091",
+                        "AR1546513",
+                        "IL9757666"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "State License Number.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "AMA_CONTACT_FLAG",
+                    "num_unique_values": 2,
+                    "samples": [
+                        1.0,
+                        0.0
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Flag indicating if the prescriber is an AMA contact (1=Yes, 0=No).",
+                    "dtype": "number",
+                    "std": 0.4994855930725899,
+                    "min": 0.0,
+                    "max": 1.0,
+                    "mean": 0.5234008314335523,
+                    "median": 1.0,
+                    "p25": 0.0,
+                    "p75": 1.0,
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "PDRP_FLAG",
+                    "num_unique_values": 2,
+                    "samples": [
+                        1.0,
+                        0.0
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Flag indicating if the prescriber is part of a PDRP program (1=Yes, 0=No).",
+                    "dtype": "number",
+                    "std": 0.4994855930725899,
+                    "min": 0.0,
+                    "max": 1.0,
+                    "mean": 0.47659916856644763,
+                    "median": 0.0,
+                    "p25": 0.0,
+                    "p75": 1.0,
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "PRODUCT_NAME",
+                    "num_unique_values": 3,
+                    "samples": [
+                        "ProductC",
+                        "ProductB",
+                        "ProductA"
+                    ],
+                    "semantic_type": "product_name",
+                    "description": "Name of the product prescribed.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "DOSE_PRESCRIBED",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "10 mg",
+                        "50 mg"
+                    ],
+                    "semantic_type": "measurement",
+                    "description": "Dose of the medication prescribed.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "RX_TYPE",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "Retail",
+                        "SP"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Type of prescription (e.g., Retail, Specialty Pharmacy).",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "DRUG_NDC",
+                    "num_unique_values": 6,
+                    "samples": [
+                        "34567-8901-02",
+                        "23456-7890-01",
+                        "12345-6789-02"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "National Drug Code (NDC) of the medication.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "COST_PRICE",
+                    "num_unique_values": 1006,
+                    "samples": [
+                        27792.8807686438,
+                        23000.0,
+                        24380.5190157899
+                    ],
+                    "semantic_type": "price",
+                    "description": "Cost price of the medication.",
+                    "dtype": "number",
+                    "std": 7723.8063848461425,
+                    "min": 21000.0,
+                    "max": 45884.6215902375,
+                    "mean": 30802.8006782967,
+                    "median": 32690.7088863662,
+                    "p25": 22391.8674992855,
+                    "p75": 38000.0,
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "WAC_PRICE",
+                    "num_unique_values": 1000,
+                    "samples": [
+                        29558.9404518047,
+                        20541.197765035,
+                        34333.7172742149
+                    ],
+                    "semantic_type": "price",
+                    "description": "Wholesale Acquisition Cost (WAC) price of the medication.",
+                    "dtype": "number",
+                    "std": 5807.604519301024,
+                    "min": 20002.8543168772,
+                    "max": 39968.1784006119,
+                    "mean": 29844.62703654249,
+                    "median": 29799.27441011175,
+                    "p25": 24906.88796789135,
+                    "p75": 34641.58822512618,
+                    "missing_values_count": 7457,
+                    "missing_values_proportion": 0.7131108348474706
+                },
+                {
+                    "column": "NET_PRICE",
+                    "num_unique_values": 1000,
+                    "samples": [
+                        35143.5872188622,
+                        36137.5543756614,
+                        21973.6618577054
+                    ],
+                    "semantic_type": "price",
+                    "description": "Net price of the medication.",
+                    "dtype": "number",
+                    "std": 5791.236235303669,
+                    "min": 18987.8090019003,
+                    "max": 41296.1594312137,
+                    "mean": 29540.966007884574,
+                    "median": 29437.688082178698,
+                    "p25": 24584.22092849295,
+                    "p75": 34284.0007993467,
+                    "missing_values_count": 7457,
+                    "missing_values_proportion": 0.7131108348474706
+                },
+                {
+                    "column": "PACK",
+                    "num_unique_values": 24,
+                    "samples": [
+                        12.0,
+                        20.0,
+                        13.0
+                    ],
+                    "semantic_type": "count",
+                    "description": "Number of packs shipped.",
+                    "dtype": "number",
+                    "std": 6.906558389550459,
+                    "min": 2.0,
+                    "max": 25.0,
+                    "mean": 13.65979381443299,
+                    "median": 14.0,
+                    "p25": 7.0,
+                    "p75": 20.0,
+                    "missing_values_count": 9002,
+                    "missing_values_proportion": 0.8608587549010233
+                },
+                {
+                    "column": "PILLS_SHIPPED",
+                    "num_unique_values": 24,
+                    "samples": [
+                        150.0,
+                        140.0,
+                        50.0
+                    ],
+                    "semantic_type": "count",
+                    "description": "Number of pills shipped.",
+                    "dtype": "number",
+                    "std": 69.06558389550459,
+                    "min": 20.0,
+                    "max": 250.0,
+                    "mean": 136.5979381443299,
+                    "median": 140.0,
+                    "p25": 70.0,
+                    "p75": 200.0,
+                    "missing_values_count": 9002,
+                    "missing_values_proportion": 0.8608587549010233
+                },
+                {
+                    "column": "QUANTITY_RETURNS",
+                    "num_unique_values": 24,
+                    "samples": [
+                        11.5,
+                        12.0,
+                        9.0
+                    ],
+                    "semantic_type": "count",
+                    "description": "Quantity of medication returned.",
+                    "dtype": "number",
+                    "std": 3.4532791947752295,
+                    "min": 1.0,
+                    "max": 12.5,
+                    "mean": 6.829896907216495,
+                    "median": 7.0,
+                    "p25": 3.5,
+                    "p75": 10.0,
+                    "missing_values_count": 9002,
+                    "missing_values_proportion": 0.8608587549010233
+                },
+                {
+                    "column": "INVOICE_NUMBER",
+                    "num_unique_values": 10457,
+                    "samples": [
+                        1153749239,
+                        589409115,
+                        1409421687
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Invoice number.",
+                    "dtype": "number",
+                    "std": 2875183984.9757533,
+                    "min": 418558.0,
+                    "max": 9999672667.0,
+                    "mean": 4977660211.331262,
+                    "median": 5001766167.0,
+                    "p25": 2490407811.0,
+                    "p75": 7400283270.0,
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "INCLUSION_FLAG",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "Y",
+                        "N"
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Flag indicating inclusion in a specific program (Y=Yes, N=No).",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "CHANNEL_TYPE",
+                    "num_unique_values": 6,
+                    "samples": [
+                        "Mail Order",
+                        "DDD",
+                        "SD"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Type of sales channel.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "DATA_CHANNEL_DESCRIPTION",
+                    "num_unique_values": 4,
+                    "samples": [
+                        "SP Sales",
+                        "Retail Sales",
+                        "DDD Sales"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Description of the data channel.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "SOURCE_NAME",
+                    "num_unique_values": 4,
+                    "samples": [
+                        "SD",
+                        "SP",
+                        "DDD"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Source of the data.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "COT_CODE_DESCRIPTION",
+                    "num_unique_values": 4,
+                    "samples": [
+                        "SD",
+                        "LTC",
+                        "Retail"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Description of the COT code.",
+                    "dtype": "category",
+                    "missing_values_count": 7457,
+                    "missing_values_proportion": 0.7131108348474706
+                },
+                {
+                    "column": "VOUCHER_PROVIDED",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "Y",
+                        "N"
+                    ],
+                    "semantic_type": "flag",
+                    "description": "Flag indicating if a voucher was provided (Y=Yes, N=No).",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "TRANSACTION_ID",
+                    "num_unique_values": 7457,
+                    "samples": [
+                        "8ELWIYCUJG0O",
+                        "WBS0D16AW29N",
+                        "1G4O85COSTHZ"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Unique identifier for the transaction.",
+                    "dtype": "string",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "TRANSACTION_TYPE",
+                    "num_unique_values": 1,
+                    "samples": [
+                        "Commercial"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Type of transaction.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "FILL_TYPE",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "Refill",
+                        "New"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Type of prescription fill (New or Refill).",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "ORDER_TYPE",
+                    "num_unique_values": 4,
+                    "samples": [
+                        "Commercial",
+                        "PAP",
+                        "Bridge"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Type of order.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "UOM",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "Packs",
+                        "Vials"
+                    ],
+                    "semantic_type": "unit",
+                    "description": "Unit of measure.",
+                    "dtype": "category",
+                    "missing_values_count": 0,
+                    "missing_values_proportion": 0.0
+                },
+                {
+                    "column": "PATIENT_ID",
+                    "num_unique_values": 3704,
+                    "samples": [
+                        "O6XAX0PFUV",
+                        "FI06BON05Z",
+                        "NAR8NQWL8W"
+                    ],
+                    "semantic_type": "identifier",
+                    "description": "Unique identifier for the patient.",
+                    "dtype": "string",
+                    "missing_values_count": 6753,
+                    "missing_values_proportion": 0.6457875107583437
+                },
+                {
+                    "column": "COPAY_TYPE",
+                    "num_unique_values": 2,
+                    "samples": [
+                        "Fixed",
+                        "Co-Insurance"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Type of copay.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "PRI_PAYER_NAME",
+                    "num_unique_values": 5,
+                    "samples": [
+                        "UnitedHealthcare",
+                        "Humana",
+                        "BCBS Association"
+                    ],
+                    "semantic_type": "payer",
+                    "description": "Name of the primary payer.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "PRIMARY_COPAY_AMOUNT",
+                    "num_unique_values": 13,
+                    "samples": [
+                        2300.0,
+                        3700.0,
+                        1520.0
+                    ],
+                    "semantic_type": "price",
+                    "description": "Amount of the primary copay.",
+                    "dtype": "number",
+                    "std": 671.8058488328079,
+                    "min": 0.0,
+                    "max": 3900.0,
+                    "mean": 507.1100978945957,
+                    "median": 0.0,
+                    "p25": 0.0,
+                    "p75": 920.0,
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "PRIMARY_ICD_CD",
+                    "num_unique_values": 201,
+                    "samples": [
+                        214.0,
+                        274.0,
+                        267.0
+                    ],
+                    "semantic_type": "code",
+                    "description": "Primary ICD code.",
+                    "dtype": "number",
+                    "std": 58.04276873404983,
+                    "min": 100.0,
+                    "max": 300.0,
+                    "mean": 199.50080993520518,
+                    "median": 199.0,
+                    "p25": 150.0,
+                    "p75": 249.0,
+                    "missing_values_count": 6753,
+                    "missing_values_proportion": 0.6457875107583437
+                },
+                {
+                    "column": "SECONDARY_ICD_CD",
+                    "num_unique_values": 201,
+                    "samples": [
+                        249.0,
+                        209.0,
+                        292.0
+                    ],
+                    "semantic_type": "code",
+                    "description": "Secondary ICD code.",
+                    "dtype": "number",
+                    "std": 57.20133489544671,
+                    "min": 100.0,
+                    "max": 300.0,
+                    "mean": 200.18341570565624,
+                    "median": 202.0,
+                    "p25": 154.0,
+                    "p75": 249.0,
+                    "missing_values_count": 8636,
+                    "missing_values_proportion": 0.8258582767524146
+                },
+                {
+                    "column": "PRIMARY_PAYER_DEDUCTIBLE",
+                    "num_unique_values": 13,
+                    "samples": [
+                        1380.0,
+                        0.0,
+                        3900.0
+                    ],
+                    "semantic_type": "price",
+                    "description": "Primary payer deductible amount.",
+                    "dtype": "number",
+                    "std": 934.2982399458648,
+                    "min": 0.0,
+                    "max": 3900.0,
+                    "mean": 2491.884135711412,
+                    "median": 2280.0,
+                    "p25": 2100.0,
+                    "p75": 3700.0,
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "PRIMARY_PAYER_PAYMENT_TYPE",
+                    "num_unique_values": 4,
+                    "samples": [
+                        "Medicaid",
+                        "Medicare",
+                        "Cash"
+                    ],
+                    "semantic_type": "category",
+                    "description": "Type of payment from the primary payer.",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "PRIMARY_PAYER_PBM_NAME",
+                    "num_unique_values": 3,
+                    "samples": [
+                        "CVS Caremark",
+                        "Express Scripts",
+                        "OptumRx"
+                    ],
+                    "semantic_type": "payer",
+                    "description": "Name of the primary payer's Pharmacy Benefit Manager (PBM).",
+                    "dtype": "category",
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "SP_NAME",
+                    "num_unique_values": 6,
+                    "samples": [
+                        "CVS Health",
+                        "Cigma",
+                        "Accredo"
+                    ],
+                    "semantic_type": "payer",
+                    "description": "Name of the specialty pharmacy.",
+                    "dtype": "category",
+                    "missing_values_count": 6753,
+                    "missing_values_proportion": 0.6457875107583437
+                },
+                {
+                    "column": "UNITS_SHIPPED",
+                    "num_unique_values": 9,
+                    "samples": [
+                        7.0,
+                        2.0,
+                        9.0
+                    ],
+                    "semantic_type": "count",
+                    "description": "Number of units shipped.",
+                    "dtype": "number",
+                    "std": 2.5976982944757823,
+                    "min": 1.0,
+                    "max": 9.0,
+                    "mean": 4.992379500857306,
+                    "median": 5.0,
+                    "p25": 3.0,
+                    "p75": 7.0,
+                    "missing_values_count": 5208,
+                    "missing_values_proportion": 0.49803959070479104
+                },
+                {
+                    "column": "DAYS_SUPPLIED",
+                    "num_unique_values": 36,
+                    "samples": [
+                        41.0,
+                        34.0,
+                        32.0
+                    ],
+                    "semantic_type": "count",
+                    "description": "Number of days the medication supply is intended to last.",
+                    "dtype": "number",
+                    "std": 10.264755669653356,
+                    "min": 15.0,
+                    "max": 50.0,
+                    "mean": 32.77967010862277,
+                    "median": 33.0,
+                    "p25": 24.0,
+                    "p75": 42.0,
+                    "missing_values_count": 3000,
+                    "missing_values_proportion": 0.2868891651525294
+                },
+                {
+                    "column": "TRX_COUNT",
+                    "num_unique_values": 1,
+                    "samples": [
+                        1.0
+                    ],
+                    "semantic_type": "count",
+                    "description": "Transaction count.",
+                    "dtype": "number",
+                    "std": 0.0,
+                    "min": 1.0,
+                    "max": 1.0,
+                    "mean": 1.0,
+                    "median": 1.0,
+                    "p25": 1.0,
+                    "p75": 1.0,
+                    "missing_values_count": 6704,
+                    "missing_values_proportion": 0.6411016543941858
+                },
+                {
+                    "column": "NRX_COUNT",
+                    "num_unique_values": 2,
+                    "samples": [
+                        0.0,
+                        1.0
+                    ],
+                    "semantic_type": "count",
+                    "description": "Count of new prescriptions.",
+                    "dtype": "number",
+                    "std": 0.4902761929126497,
+                    "min": 0.0,
+                    "max": 1.0,
+                    "mean": 0.40154543032240875,
+                    "median": 0.0,
+                    "p25": 0.0,
+                    "p75": 1.0,
+                    "missing_values_count": 6704,
+                    "missing_values_proportion": 0.6411016543941858
+                },
+                {
+                    "column": "GPO_AFFILIATION",
+                    "num_unique_values": 3,
+                    "samples": [
+                        "McKesson",
+                        "HealthTrust",
+                        "CardinalHealth"
+                    ],
+                    "semantic_type": "organization",
+                    "description": "Group Purchasing Organization (GPO) affiliation.",
+                    "dtype": "category",
+                    "missing_values_count": 9002,
+                    "missing_values_proportion": 0.8608587549010233
+                }
+            ],
+            "enrichment_status": "success",
+            "target_database": "RAG_DB_UPLOADS",
+            "target_table_name": "prescription_transactions_sales_"
+        }
+    }
+]
